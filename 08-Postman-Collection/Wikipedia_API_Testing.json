@@ -1,0 +1,304 @@
+{
+  "info": {
+    "_postman_id": "0c9302bc-e1b2-44c2-bbbd-b4b77f37db5e",
+    "name": "Wikipedia API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46260561"
+  },
+  "item": [
+    {
+      "name": "Valid Search - Computer Science",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=computer%20science&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "computer%20science"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid Search - No Results",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=xyzabc123456789&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "xyzabc123456789"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Valid Search - Software Testing",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Software%20Testing&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "Software%20Testing"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Valid Search - Information Technology",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Information%20Technology&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "Information%20Technology"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Valid Search - Python",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Python&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "Python"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Negative Search - Empty Keyword",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": ""
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Negative Search - Special Characters",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%40%20%23%20%24%20%25&format=json",
+          "protocol": "https",
+          "host": [
+            "en",
+            "wikipedia",
+            "org"
+          ],
+          "path": [
+            "w",
+            "api.php"
+          ],
+          "query": [
+            {
+              "key": "action",
+              "value": "query"
+            },
+            {
+              "key": "list",
+              "value": "search"
+            },
+            {
+              "key": "srsearch",
+              "value": "%40%20%23%20%24%20%25"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
